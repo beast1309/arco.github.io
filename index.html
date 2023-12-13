@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-top">
+                    <select class="header-top__location">
+                        <option class="header-top__location-item">Краснодар</option>
+                        <option class="header-top__location-item">Ростов</option>
+                    </select>
+                    <ul class="header-top__list">
+                        <li class="header-top__list-item">
+                            <a class="header-top__list-link" href="#">Акции</a>
+                        </li>
+                        <li class="header-top__list-item">
+                            <a class="header-top__list-link" href="#">Сборка</a>
+                        </li>
+                        <li class="header-top__list-item">
+                            <a class="header-top__list-link" href="#">Оплата</a>
+                        </li>
+                        <li class="header-top__list-item">
+                            <a class="header-top__list-link" href="#">Доставка</a>
+                        </li>
+                    </ul>
+                    <ul class="header-top__contacts">
+                        <li class="header-top__contacts-item">
+                            <a class="header-top__conatcts-link" href="#">Наши работы</a>
+                        </li>
+                        <li class="header-top__contacts-item">
+                            <a class="header-top__conatcts-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-middle">
+                    <a class="header-middle__logo" href="#">
+                        <img class="header-middle__logo-image" src="images/logo.svg" alt="">
+                    </a>
+                    <div class="header-middle__nav">
+                        <p class="header-middle__nav-adress">ул. Московская, 144 корп. - 1</p>
+                        <a class="header-middle__nav-maplink" href="#">Схема проезда</a>
+                    </div>
+                    <form class="header-middle__form" action="">
+                        <input class="header-middle__form-input" type="text" placeholder="Поиск">
+                        <button class="header-middle__form-btn"
+                            style="background-image: url(images/search-btn.svg);"></button>
+                    </form>
+                    <div class="header-middle__call">
+                        <a class="header-middle__call-phone" href="tel:89615259191">8 (961) 525 91 91</a>
+                        <button class="header-middle__call-callback">Заказать звонок</button>
+                    </div>
+                    <ul class="header-middle__list">
+                        <li class="header-middle__list-item">
+                            <a class="header-middle__list-link" href="#"><img class="header-middle__link-image"
+                                    src="images/user.svg" alt="">Войти</a>
+                        </li>
+                        <li class="header-middle__list-item">
+                            <a class="header-middle__list-link favorite" href="#">
+                                <img class="header-middle__link-image" src="images/selected.svg" alt="">
+                                <p class="favorite-value" id="favorite">0</p>
+                                <p class="favorite-text">Избранное</p>
+                            </a>
+                        </li>
+                        <li class="header-middle__list-item">
+                            <a class="header-middle__list-link" href="#"><img class="header-middle__link-image"
+                                    src="images/shop.svg" alt="">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-bottom">
+                    <div class="container">
+                        <div class="header-bottom__inner">
+                            <div class="header-bottom__dropdown">
+                                <button class="header-bottom__dropdown-btn">Кухни</button>
+                                <div class="header-bottom__dropdown-content">
+                                    <a class="header-bottom__dropdown-link" href="#">Модульные кухни</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Готовые комплекты</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Маленькие кухни</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Угловые кухни</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Кухонные уголки</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Столы кухонные</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Стулья для кухни</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Комплектующие</a>
+                                </div>
+                            </div>
+                            <div class="header-bottom__dropdown">
+                                <button class="header-bottom__dropdown-btn">Гостинные</button>
+                                <div class="header-bottom__dropdown-content">
+                                    <a class="header-bottom__dropdown-link" href="#">Модульные</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Журнальные столы</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Полки</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Тумбы под ТВ</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Шкафы</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Стеллажи</a>
+                                </div>
+                            </div>
+                            <div class="header-bottom__dropdown">
+                                <button class="header-bottom__dropdown-btn">Спальни</button>
+                                <div class="header-bottom__dropdown-content">
+                                    <a class="header-bottom__dropdown-link" href="#">Кровати</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Матрацы</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Шкафы</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Комоды</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Стеллажи туалетные</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Тумбы прикроватные</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Зеркала</a>
+                                </div>
+                            </div>
+                            <div class="header-bottom__dropdown">
+                                <button class="header-bottom__dropdown-btn">Прихожие</button>
+                                <div class="header-bottom__dropdown-content">
+                                    <a class="header-bottom__dropdown-link" href="#">Модульные</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Обувницы</a>
+                                </div>
+                            </div>
+                            <div class="header-bottom__dropdown">
+                                <button class="header-bottom__dropdown-btn">Шкафы-купе</button>
+                                <div class="header-bottom__dropdown-content">
+                                    <a class="header-bottom__dropdown-link" href="#">Шкафы-купе</a>
+                                </div>
+                            </div>
+                            <div class="header-bottom__dropdown">
+                                <button class="header-bottom__dropdown-btn">Детские</button>
+                                <div class="header-bottom__dropdown-content">
+                                    <a class="header-bottom__dropdown-link" href="#">Кровати</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Полки</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Столы</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Тумбы</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Шкафы</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Комоды</a>
+                                </div>
+                            </div>
+                            <div class="header-bottom__dropdown">
+                                <button class="header-bottom__dropdown-btn">Диваны</button>
+                                <div class="header-bottom__dropdown-content">
+                                    <a class="header-bottom__dropdown-link" href="#">Прямые</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Угловые</a>
+                                    <a class="header-bottom__dropdown-link" href="#">На металлокаркасе</a>
+                                    <a class="header-bottom__dropdown-link" href="#">Кресла</a>
+                                </div>
+                            </div>
+                            <a class="header-bottom__view-btn" href="#">ГДЕ ПОСМОТРЕТЬ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <section class="preview-slider">
+        <div class="container">
+            <div class="slider__inner">
+                <img class="slider-item" src="images/slider-item-1.png" alt="">
+                <img class="slider-item" src="images/slider-item-2.png" alt="">
+                <img class="slider-item" src="images/slider-item-3.png" alt="">
+                <img class="slider-item" src="images/slider-item-4.png" alt="">
+                <img class="slider-item" src="images/slider-item-5.png" alt="">
+                <img class="slider-item" src="images/slider-item-6.png" alt="">
+                <img class="slider-item" src="images/slider-item-7.png" alt="">
+                <img class="slider-item" src="images/slider-item-8.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h3 class="benefits__title">НАШИ ПРЕИМУЩЕСТВА</h3>
+            <ul class="benefits__list">
+                <li class="benefits__list-item">Удобное расположение магазина</li>
+                <li class="benefits__list-item">Быстрая доставка</li>
+                <li class="benefits__list-item">Низкие цены<span>Если найдете дешевле -<br>сделаем скидку</span></li>
+                <li class="benefits__list-item">Гарантия качества</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h3 class="catalog__title">КАТАЛОГ</h3>
+            <ul class="catalog__list">
+                <li class="catalog__list-item">
+                    <a class="catalog__list-link" href="#">
+                        <img class="catalog__list-link__image" src="images/slider-item-1.png" alt="">
+                        <p class="catalog__list-link__text">КУХНИ</p>
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a class="catalog__list-link" href="#">
+                        <img class="catalog__list-link__image" src="images/slider-item-2.png" alt="">
+                        <p class="catalog__list-link__text">ГОСТИННЫЕ</p>
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a class="catalog__list-link" href="#">
+                        <img class="catalog__list-link__image" src="images/slider-item-3.png" alt="">
+                        <p class="catalog__list-link__text">СПАЛЬНИ</p>
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a class="catalog__list-link" href="#">
+                        <img class="catalog__list-link__image" src="images/slider-item-4.png" alt="">
+                        <p class="catalog__list-link__text">ПРИХОЖИЕ</p>
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a class="catalog__list-link" href="#">
+                        <img class="catalog__list-link__image" src="images/slider-item-5.png" alt="">
+                        <p class="catalog__list-link__text">ШКАФЫ-КУПЕ</p>
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a class="catalog__list-link" href="#">
+                        <img class="catalog__list-link__image" src="images/slider-item-6.png" alt="">
+                        <p class="catalog__list-link__text">ДЕТСКИЕ</p>
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a class="catalog__list-link" href="#">
+                        <img class="catalog__list-link__image" src="images/slider-item-7.png" alt="">
+                        <p class="catalog__list-link__text">ДИВАНЫ</p>
+                    </a>
+                </li>
+                <li class="catalog__list-item">
+                    <a class="catalog__list-link" href="#">
+                        <img class="catalog__list-link__image" src="images/slider-item-8.png" alt="">
+                        <p class="catalog__list-link__text">СТОЛЫ И СТУЛЬЯ</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="container">
+            <div class="popular__inner">
+                <div class="popular__top">
+                    <h3 class="popular__top-title">ПОПУЛЯРНЫЕ ТОВАРЫ</h3>
+                    <a class="popular__top-link" href="#">Все товары</a>
+                </div>
+                <div class="popular__bottom">
+                    <ul class="popular__bottom-list">
+                        <li class="popular__bottom-list__item">
+                            <div class="popular__bottom-list__slider">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                            </div>
+                            <p class="popular__bottom-list__name">Мори кровать КРМ 900.1</p>
+                            <div class="popular__bottom-list__select">
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3"></label>
+                                </div>
+                            </div>
+                            <p class="popular__bottom-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                            <div class="popular__bottom-list__buttons">
+                                <button class="buy__btn">КУПИТЬ</button>
+                                <button class="favorite__btn" id="favorite-btn-1">
+                                    <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="popular__bottom-info">
+                                <p class="popular__bottom-info__item">Размеры:</p>
+                                <p class="popular__bottom-info__item">Ширина</p>
+                                <p class="popular__bottom-info__item">Высота</p>
+                                <p class="popular__bottom-info__item">Глубина</p>
+                                <p class="popular__bottom-info__item">1635 мм</p>
+                                <p class="popular__bottom-info__item">650 мм</p>
+                                <p class="popular__bottom-info__item">2032 мм</p>
+                            </div>
+                        </li>
+                        <li class="popular__bottom-list__item">
+                            <div class="popular__bottom-list__slider">
+                                <img class="popular__bottom-list__image" src="images/popular-2.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-2.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-2.png" alt="">
+                            </div>
+                            <p class="popular__bottom-list__name">Гостиная модульная Lucido</p>
+                            <div class="popular__bottom-list__select">
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3"></label>
+                                </div>
+                            </div>
+                            <p class="popular__bottom-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                            <div class="popular__bottom-list__buttons">
+                                <button class="buy__btn">КУПИТЬ</button>
+                                <button class="favorite__btn" id="favorite-btn-2">
+                                    <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="popular__bottom-info">
+                                <p class="popular__bottom-info__item">Размеры:</p>
+                                <p class="popular__bottom-info__item">Ширина</p>
+                                <p class="popular__bottom-info__item">Высота</p>
+                                <p class="popular__bottom-info__item">Глубина</p>
+                                <p class="popular__bottom-info__item">1635 мм</p>
+                                <p class="popular__bottom-info__item">650 мм</p>
+                                <p class="popular__bottom-info__item">2032 мм</p>
+                            </div>
+                        </li>
+                        <li class="popular__bottom-list__item">
+                            <div class="popular__bottom-list__slider">
+                                <img class="popular__bottom-list__image" src="images/popular-3.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-3.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-3.png" alt="">
+                            </div>
+                            <p class="popular__bottom-list__name">Ронда КРР1600.1</p>
+                            <div class="popular__bottom-list__select">
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3"></label>
+                                </div>
+                            </div>
+                            <p class="popular__bottom-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                            <div class="popular__bottom-list__buttons">
+                                <button class="buy__btn">КУПИТЬ</button>
+                                <button class="favorite__btn" id="favorite-btn-3">
+                                    <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="popular__bottom-info">
+                                <p class="popular__bottom-info__item">Размеры:</p>
+                                <p class="popular__bottom-info__item">Ширина</p>
+                                <p class="popular__bottom-info__item">Высота</p>
+                                <p class="popular__bottom-info__item">Глубина</p>
+                                <p class="popular__bottom-info__item">1635 мм</p>
+                                <p class="popular__bottom-info__item">650 мм</p>
+                                <p class="popular__bottom-info__item">2032 мм</p>
+                            </div>
+                        </li>
+                        <li class="popular__bottom-list__item">
+                            <div class="popular__bottom-list__slider">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                            </div>
+                            <p class="popular__bottom-list__name">Мори кровать КРМ 900.1</p>
+                            <div class="popular__bottom-list__select">
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3"></label>
+                                </div>
+                            </div>
+                            <p class="popular__bottom-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                            <div class="popular__bottom-list__buttons">
+                                <button class="buy__btn">КУПИТЬ</button>
+                                <button class="favorite__btn" id="favorite-btn-4">
+                                    <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="popular__bottom-info">
+                                <p class="popular__bottom-info__item">Размеры:</p>
+                                <p class="popular__bottom-info__item">Ширина</p>
+                                <p class="popular__bottom-info__item">Высота</p>
+                                <p class="popular__bottom-info__item">Глубина</p>
+                                <p class="popular__bottom-info__item">1635 мм</p>
+                                <p class="popular__bottom-info__item">650 мм</p>
+                                <p class="popular__bottom-info__item">2032 мм</p>
+                            </div>
+                        </li>
+                        <li class="popular__bottom-list__item">
+                            <div class="popular__bottom-list__slider">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                            </div>
+                            <p class="popular__bottom-list__name">Мори кровать КРМ 900.1</p>
+                            <div class="popular__bottom-list__select">
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3"></label>
+                                </div>
+                            </div>
+                            <p class="popular__bottom-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                            <div class="popular__bottom-list__buttons">
+                                <button class="buy__btn">КУПИТЬ</button>
+                                <button class="favorite__btn" id="favorite-btn-5">
+                                    <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="popular__bottom-info">
+                                <p class="popular__bottom-info__item">Размеры:</p>
+                                <p class="popular__bottom-info__item">Ширина</p>
+                                <p class="popular__bottom-info__item">Высота</p>
+                                <p class="popular__bottom-info__item">Глубина</p>
+                                <p class="popular__bottom-info__item">1635 мм</p>
+                                <p class="popular__bottom-info__item">650 мм</p>
+                                <p class="popular__bottom-info__item">2032 мм</p>
+                            </div>
+                        </li>
+                        <li class="popular__bottom-list__item">
+                            <div class="popular__bottom-list__slider">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                            </div>
+                            <p class="popular__bottom-list__name">Мори кровать КРМ 900.1</p>
+                            <div class="popular__bottom-list__select">
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3"></label>
+                                </div>
+                            </div>
+                            <p class="popular__bottom-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                            <div class="popular__bottom-list__buttons">
+                                <button class="buy__btn">КУПИТЬ</button>
+                                <button class="favorite__btn" id="favorite-btn-6">
+                                    <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="popular__bottom-info">
+                                <p class="popular__bottom-info__item">Размеры:</p>
+                                <p class="popular__bottom-info__item">Ширина</p>
+                                <p class="popular__bottom-info__item">Высота</p>
+                                <p class="popular__bottom-info__item">Глубина</p>
+                                <p class="popular__bottom-info__item">1635 мм</p>
+                                <p class="popular__bottom-info__item">650 мм</p>
+                                <p class="popular__bottom-info__item">2032 мм</p>
+                            </div>
+                        </li>
+                        <li class="popular__bottom-list__item">
+                            <div class="popular__bottom-list__slider">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                            </div>
+                            <p class="popular__bottom-list__name">Мори кровать КРМ 900.1</p>
+                            <div class="popular__bottom-list__select">
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3"></label>
+                                </div>
+                            </div>
+                            <p class="popular__bottom-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                            <div class="popular__bottom-list__buttons">
+                                <button class="buy__btn">КУПИТЬ</button>
+                                <button class="favorite__btn" id="favorite-btn-7">
+                                    <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="popular__bottom-info">
+                                <p class="popular__bottom-info__item">Размеры:</p>
+                                <p class="popular__bottom-info__item">Ширина</p>
+                                <p class="popular__bottom-info__item">Высота</p>
+                                <p class="popular__bottom-info__item">Глубина</p>
+                                <p class="popular__bottom-info__item">1635 мм</p>
+                                <p class="popular__bottom-info__item">650 мм</p>
+                                <p class="popular__bottom-info__item">2032 мм</p>
+                            </div>
+                        </li>
+                        <li class="popular__bottom-list__item">
+                            <div class="popular__bottom-list__slider">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                                <img class="popular__bottom-list__image" src="images/popular-1.png" alt="">
+                            </div>
+                            <p class="popular__bottom-list__name">Мори кровать КРМ 900.1</p>
+                            <div class="popular__bottom-list__select">
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2"></label>
+                                </div>
+                                <div class="popular__bottom-list__btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3"></label>
+                                </div>
+                            </div>
+                            <p class="popular__bottom-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                            <div class="popular__bottom-list__buttons">
+                                <button class="buy__btn">КУПИТЬ</button>
+                                <button class="favorite__btn" id="favorite-btn-8">
+                                    <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="popular__bottom-info">
+                                <p class="popular__bottom-info__item">Размеры:</p>
+                                <p class="popular__bottom-info__item">Ширина</p>
+                                <p class="popular__bottom-info__item">Высота</p>
+                                <p class="popular__bottom-info__item">Глубина</p>
+                                <p class="popular__bottom-info__item">1635 мм</p>
+                                <p class="popular__bottom-info__item">650 мм</p>
+                                <p class="popular__bottom-info__item">2032 мм</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="popular__showmore-btn">Показать еще</button>
+        </div>
+    </section>
+
+    <section class="categoryes">
+        <div class="container">
+            <div class="categoryes__inner">
+                <h3 class="categoryes__title">ПОПУЛЯРНЫЕ КАТЕГОРИИ</h3>
+                <ul class="categoryes__list">
+                    <li class="categoryes__list-item">
+                        <a class="categoryes__list-link" href="#">КУХНИ</a>
+                    </li>
+                    <li class="categoryes__list-item">
+                        <a class="categoryes__list-link" href="#">КРОВАТИ</a>
+                    </li>
+                    <li class="categoryes__list-item">
+                        <a class="categoryes__list-link" href="#">ГОСТИННЫЕ</a>
+                    </li>
+                    <li class="categoryes__list-item">
+                        <a class="categoryes__list-link" href="#">ШКАФ -КУПЕ</a>
+                    </li>
+                    <li class="categoryes__list-item">
+                        <a class="categoryes__list-link" href="#">СПАЛЬНИ</a>
+                    </li>
+                    <li class="categoryes__list-item">
+                        <a class="categoryes__list-link" href="#">ПРИХОЖИЕ</a>
+                    </li>
+                    <li class="categoryes__list-item">
+                        <a class="categoryes__list-link" href="#">ДИВАНЫ</a>
+                    </li>
+                    <li class="categoryes__list-item">
+                        <a class="categoryes__list-link" href="#">ДЕТСКИЕ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sells">
+        <div class="container">
+            <div class="sells__inner">
+                <h3 class="sells__title">ТОВАРЫ ПО АКЦИИ</h3>
+                <ul class="sells-list">
+                    <li class="sells-list__item">
+                        <div class="sells-list__slider">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                        </div>
+                        <p class="sells-list__name">Мори кровать КРМ 900.1</p>
+                        <div class="sells-list__select">
+                            <div class="sells-list__btn">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3"></label>
+                            </div>
+                        </div>
+                        <p class="sells-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                        <div class="sells-list__buttons">
+                            <button class="buy__btn">КУПИТЬ</button>
+                            <button class="favorite__btn">
+                                <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sells-info">
+                            <p class="sells-info__item">Размеры:</p>
+                            <p class="sells-info__item">Ширина</p>
+                            <p class="sells-info__item">Высота</p>
+                            <p class="sells-info__item">Глубина</p>
+                            <p class="sells-info__item">1635 мм</p>
+                            <p class="sells-info__item">650 мм</p>
+                            <p class="sells-info__item">2032 мм</p>
+                        </div>
+                    </li>
+                    <li class="sells-list__item">
+                        <div class="sells-list__slider">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                        </div>
+                        <p class="sells-list__name">Мори кровать КРМ 900.1</p>
+                        <div class="sells-list__select">
+                            <div class="sells-list__btn">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3"></label>
+                            </div>
+                        </div>
+                        <p class="sells-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                        <div class="sells-list__buttons">
+                            <button class="buy__btn">КУПИТЬ</button>
+                            <button class="favorite__btn">
+                                <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sells-info">
+                            <p class="sells-info__item">Размеры:</p>
+                            <p class="sells-info__item">Ширина</p>
+                            <p class="sells-info__item">Высота</p>
+                            <p class="sells-info__item">Глубина</p>
+                            <p class="sells-info__item">1635 мм</p>
+                            <p class="sells-info__item">650 мм</p>
+                            <p class="sells-info__item">2032 мм</p>
+                        </div>
+                    </li>
+                    <li class="sells-list__item">
+                        <div class="sells-list__slider">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                        </div>
+                        <p class="sells-list__name">Мори кровать КРМ 900.1</p>
+                        <div class="sells-list__select">
+                            <div class="sells-list__btn">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3"></label>
+                            </div>
+                        </div>
+                        <p class="sells-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                        <div class="sells-list__buttons">
+                            <button class="buy__btn">КУПИТЬ</button>
+                            <button class="favorite__btn">
+                                <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sells-info">
+                            <p class="sells-info__item">Размеры:</p>
+                            <p class="sells-info__item">Ширина</p>
+                            <p class="sells-info__item">Высота</p>
+                            <p class="sells-info__item">Глубина</p>
+                            <p class="sells-info__item">1635 мм</p>
+                            <p class="sells-info__item">650 мм</p>
+                            <p class="sells-info__item">2032 мм</p>
+                        </div>
+                    </li>
+                    <li class="sells-list__item">
+                        <div class="sells-list__slider">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                        </div>
+                        <p class="sells-list__name">Мори кровать КРМ 900.1</p>
+                        <div class="sells-list__select">
+                            <div class="sells-list__btn">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3"></label>
+                            </div>
+                        </div>
+                        <p class="sells-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                        <div class="sells-list__buttons">
+                            <button class="buy__btn">КУПИТЬ</button>
+                            <button class="favorite__btn">
+                                <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sells-info">
+                            <p class="sells-info__item">Размеры:</p>
+                            <p class="sells-info__item">Ширина</p>
+                            <p class="sells-info__item">Высота</p>
+                            <p class="sells-info__item">Глубина</p>
+                            <p class="sells-info__item">1635 мм</p>
+                            <p class="sells-info__item">650 мм</p>
+                            <p class="sells-info__item">2032 мм</p>
+                        </div>
+                    </li>
+                    <li class="sells-list__item">
+                        <div class="sells-list__slider">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                        </div>
+                        <p class="sells-list__name">Мори кровать КРМ 900.1</p>
+                        <div class="sells-list__select">
+                            <div class="sells-list__btn">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3"></label>
+                            </div>
+                        </div>
+                        <p class="sells-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                        <div class="sells-list__buttons">
+                            <button class="buy__btn">КУПИТЬ</button>
+                            <button class="favorite__btn">
+                                <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sells-info">
+                            <p class="sells-info__item">Размеры:</p>
+                            <p class="sells-info__item">Ширина</p>
+                            <p class="sells-info__item">Высота</p>
+                            <p class="sells-info__item">Глубина</p>
+                            <p class="sells-info__item">1635 мм</p>
+                            <p class="sells-info__item">650 мм</p>
+                            <p class="sells-info__item">2032 мм</p>
+                        </div>
+                    </li>
+                    <li class="sells-list__item">
+                        <div class="sells-list__slider">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                        </div>
+                        <p class="sells-list__name">Мори кровать КРМ 900.1</p>
+                        <div class="sells-list__select">
+                            <div class="sells-list__btn">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3"></label>
+                            </div>
+                        </div>
+                        <p class="sells-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                        <div class="sells-list__buttons">
+                            <button class="buy__btn">КУПИТЬ</button>
+                            <button class="favorite__btn">
+                                <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sells-info">
+                            <p class="sells-info__item">Размеры:</p>
+                            <p class="sells-info__item">Ширина</p>
+                            <p class="sells-info__item">Высота</p>
+                            <p class="sells-info__item">Глубина</p>
+                            <p class="sells-info__item">1635 мм</p>
+                            <p class="sells-info__item">650 мм</p>
+                            <p class="sells-info__item">2032 мм</p>
+                        </div>
+                    </li>
+                    <li class="sells-list__item">
+                        <div class="sells-list__slider">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                        </div>
+                        <p class="sells-list__name">Мори кровать КРМ 900.1</p>
+                        <div class="sells-list__select">
+                            <div class="sells-list__btn">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3"></label>
+                            </div>
+                        </div>
+                        <p class="sells-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                        <div class="sells-list__buttons">
+                            <button class="buy__btn">КУПИТЬ</button>
+                            <button class="favorite__btn">
+                                <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sells-info">
+                            <p class="sells-info__item">Размеры:</p>
+                            <p class="sells-info__item">Ширина</p>
+                            <p class="sells-info__item">Высота</p>
+                            <p class="sells-info__item">Глубина</p>
+                            <p class="sells-info__item">1635 мм</p>
+                            <p class="sells-info__item">650 мм</p>
+                            <p class="sells-info__item">2032 мм</p>
+                        </div>
+                    </li>
+                    <li class="sells-list__item">
+                        <div class="sells-list__slider">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                            <img class="sells-list__image" src="images/popular-1.png" alt="">
+                        </div>
+                        <p class="sells-list__name">Мори кровать КРМ 900.1</p>
+                        <div class="sells-list__select">
+                            <div class="sells-list__btn">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2"></label>
+                            </div>
+                            <div class="sells-list__btn">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3"></label>
+                            </div>
+                        </div>
+                        <p class="sells-list__price"><span>7 159 руб.</span>5 017 руб.</p>
+                        <div class="sells-list__buttons">
+                            <button class="buy__btn">КУПИТЬ</button>
+                            <button class="favorite__btn">
+                                <img class="favorite__btn-image" src="images/favorite-img.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sells-info">
+                            <p class="sells-info__item">Размеры:</p>
+                            <p class="sells-info__item">Ширина</p>
+                            <p class="sells-info__item">Высота</p>
+                            <p class="sells-info__item">Глубина</p>
+                            <p class="sells-info__item">1635 мм</p>
+                            <p class="sells-info__item">650 мм</p>
+                            <p class="sells-info__item">2032 мм</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="works">
+        <div class="container">
+            <div class="works__inner">
+                <div class="works__top">
+                    <h3 class="works__top-title">НАШИ РАБОТЫ</h3>
+                    <a class="works__top-link" href="#">Смотреть все работы</a>
+                </div>
+                <div class="works__bottom">
+                    <ul class="works__bottom-list">
+                        <li class="works__bottom-list__item">
+                            <a class="works__bottom-list__link" href="#">
+                                <img class="works__bottom-list__image" src="images/works-img-1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="works__bottom-list__item">
+                            <a class="works__bottom-list__link" href="#">
+                                <img class="works__bottom-list__image" src="images/works-img-2.png" alt="">
+                            </a>
+                        </li>
+                        <li class="works__bottom-list__item">
+                            <a class="works__bottom-list__link" href="#">
+                                <img class="works__bottom-list__image" src="images/works-img-3.png" alt="">
+                            </a>
+                        </li>
+                        <li class="works__bottom-list__item">
+                            <a class="works__bottom-list__link" href="#">
+                                <img class="works__bottom-list__image" src="images/works-img-4.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__info">
+                    <h3 class="contacts__info-title">НАШИ КОНТАКТЫ</h3>
+                    <p class="contacts__info-text">Краснодар, Московская 144 корпус -1</p>
+                    <a class="contacts__info-phone" href="tel:+79615259191">+7 961-525-91-91</a>
+                    <button class="contacts__info-btn">ЗАДАТЬ ВОПРОС</button>
+                </div>
+                <div class="contacts__map">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
+                            href="https://yandex.ru/maps/35/krasnodar/house/moskovskaya_ulitsa_1/Z0AYdgdiSE0FQFpvfXx0cX5gbQ==/?ll=39.002181%2C45.050239&utm_medium=mapframe&utm_source=maps&z=15.34"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт,
+                            навигация, поиск мест</a><iframe
+                            src="https://yandex.ru/map-widget/v1/?ll=39.002181%2C45.050239&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM5NzU0NRJE0KDQvtGB0YHQuNGPLCDQmtGA0LDRgdC90L7QtNCw0YAsINCc0L7RgdC60L7QstGB0LrQsNGPINGD0LvQuNGG0LAsIDEiCg08AhxCFXIzNEI%2C&z=15.34"
+                            width="810" height="490" frameborder="1" allowfullscreen="true"
+                            style="position:relative;"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social">
+        <div class="container">
+            <div class="social__inner">
+                <h3 class="social__title">МЫ В INSTAGRAM</h3>
+                <div class="social__images">
+                    <img class="social__images-item-1" src="images/social-1.png" alt="">
+                    <img class="social__images-item-2" src="images/social-2.png" alt="">
+                    <img class="social__images-item-3" src="images/social-3.png" alt="">
+                    <img class="social__images-item-4" src="images/social-4.png" alt="">
+                    <img class="social__images-item-5" src="images/social-5.png" alt="">
+                    <img class="social__images-item-6" src="images/social-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__info">
+                <a class="footer__info-logo" href="#">
+                    <img class="footer__info-logo__image" src="images/footer-logo.svg" alt="">
+                </a>
+                <a href="tel:89615259191" class="footer__info-phone">8-961-525-91-91</a>
+                <table class="footer__info-table">
+                    <tr>
+                        <td>Время работы:</td>
+                        <td>с 10:00 до 19:00</td>
+                    </tr>
+                    <tr>
+                        <td>Адрес:</td>
+                        <td>Краснодар,<br>ул. Московская 144 корп. - 1</td>
+                    </tr>
+                    <tr>
+                        <td>Почта:</td>
+                        <td><a href="mailto:mebelarko@mail.ru">mebelarko@mail.ru</a></td>
+                    </tr>
+                </table>
+                <div class="footer__info-links">
+                    <p class="footer__info-links__title">Мы в Инстаграме</p>
+                    <a class="footer__info-links__item" href="#">
+                        <img class="footer__info-links__image" src="images/instagram.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer__info-copyright">© Все права защищены</p>
+            </div>
+            <div class="footer__menu">
+                <table class="footer__menu-table">
+                    <thead>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Кухни</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Гостинные</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Спальни</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Диваны</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Детские</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Прихожие</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Шкафы-купе</a>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Модульные кухни</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Модульные</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Кровати</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Прямые</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Кровати</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Модульные</a>
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Модульные</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Журнальные столы</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Матрацы</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Угловые</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Полки</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Обувницы</a>
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Маленькие кухни</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Полки</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Шкафы</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">На металлокаркасе</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Столы</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Угловые кухни</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Тумбы под ТВ</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Комоды</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Кресла</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Тумбы</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Кухонные уголки</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Шкафы</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Столы туалетные</a>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Шкафы</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Столы кухонные</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Стеллажи</a>
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Тумбы прикроватные</a>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Комоды</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Стулья для кухни</a>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Зеркала</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="footer__menu-table__link" href="#">Комплектующие</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
