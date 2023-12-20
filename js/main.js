@@ -43,6 +43,14 @@ $(function () {
         infinite: true,
 
         responsive: [
+
+            /*  {
+                 breakpoint: 561,
+                 settings: {
+                     unslick: none,
+                 }
+             }, */
+
             {
                 breakpoint: 1581,
                 settings: {
@@ -56,12 +64,7 @@ $(function () {
                     centerMode: true,
                 }
             },
-            {
-                breakpoint: 561,
-                settings: {
-                    unslick: none,
-                }
-            }
+
         ]
 
     });
